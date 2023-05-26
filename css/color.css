@@ -227,4 +227,79 @@
 .flying {
   color: #118edc;
   background-color: #118edc29;
+  
+}
+
+/* background da tabela dos pokemons */
+
+[typePokemonModal="bug"] .left-container{
+  background: url("../assets/bg-types/bug.svg");
+}
+
+[typePokemonModal="dark"] .left-container{
+  background: url("../assets/bg-types/dark.svg");
+}
+
+[typePokemonModal="dragon"] .left-container{
+  background: url("../assets/bg-types/dragon.svg");
+}
+
+[typePokemonModal="electric"] .left-container{
+  background: url("../assets/bg-types/electric.svg");
+}
+
+[typePokemonModal="fairy"] .left-container{
+  background: url("../assets/bg-types/fairy.svg");
+}
+
+[typePokemonModal="fighting"] .left-container{
+  background: url("../assets/bg-types/fighting.svg");
+}
+
+[typePokemonModal="fire"] .left-container{
+  background: url("../assets/bg-types/fire.svg");
+}
+
+[typePokemonModal="flying"] .left-container{
+  background: url("../assets/bg-types/flying.svg");
+}
+
+[typePokemonModal="ghost"] .left-container{
+  background: url("../assets/bg-types/ghost.svg");
+}
+
+[typePokemonModal="ground"] .left-container{
+  background: url("../assets/bg-types/ground.svg");
+}
+
+[typePokemonModal="ice"] .left-container{
+  background: url("../assets/bg-types/ice.svg");
+}
+
+[typePokemonModal="normal"] .left-container{
+  background: url("../assets/bg-types/normal.svg");
+}
+
+[typePokemonModal="poison"] .left-container{
+  background: url("../assets/bg-types/poison.svg");
+}
+
+[typePokemonModal="psychic"] .left-container{
+  background: url("../assets/bg-types/psychic.svg");
+}
+
+[typePokemonModal="rock"] .left-container{
+  background: url("../assets/bg-types/rock.svg");
+}
+
+[typePokemonModal="steel"] .left-container{
+  background: url("../assets/bg-types/steel.svg");
+}
+
+[typePokemonModal="water"] .left-container{
+  background: url("../assets/bg-types/water.svg");
+}
+
+[typePokemonModal="grass"] .left-container{
+  background: url("../assets/bg-types/grass.svg");
 }

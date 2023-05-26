@@ -31,7 +31,7 @@
         </button>
     </div>
 
-    <button class="type-filter grass">
+    <button class="type-filter fire">
         <div class="icon2">
             <img src="./assets/icon-types/grass.svg" alt="ghost">
         </div>
@@ -41,7 +41,7 @@
 
     <button>
       <div class="card-pokemon">
-        <div class="image bug">
+        <div class="image grass">
           <img src="./assets/bulbasaur.svg" alt="">
       </div>
 
@@ -56,24 +56,157 @@
       </div>
     </button>
 
-    <span class="tag-type grass">Bug</span>
+    <span class="tag-type dragon">Bug</span>
 
     <button class="btn-load-more">Load more Pokémons</button>
+
+    <div class="modal" typePokemonModal="grass">
+      <div class="overlay"></div>
+      <div class="box"><button class="close">
+        <img src="./assets/close.svg" alt="fechar">
+      </button>
+
+      <div class="left-container">
+        <div class="icon6">
+          <img src="./assets/icon-types/grass.svg" alt="grass">
+        </div>
+        <div class="image1">
+          <img src="./assets/bulbasaur.svg" alt="bulbasaur">
+        </div>
+      </div>
+      <div class="right-container">
+
+        <div class="name6">
+          <h2>bulbasaur</h2>
+          <span>#001</span>
+        </div>
+        <ul class="type2">
+          <li> <span class="tag-type fire">fire</span> </li>
+          <li> <span class="tag-type poison">poison</span> </li>
+        </ul>
+        <ul class="info6">
+          <li>
+            <span>Height</span>
+            <strong>0.7m</strong>
+          </li>
+
+          <li>
+            <span>weight</span>
+            <strong>6.9m</strong>
+          </li>
+
+          
+          <li>
+            <span>abilities</span>
+            <strong>Overgrow</strong>
+          </li>
+
+        </ul>
+
+        <div class="weak">
+          <h4>Weaknesses</h4>
+          <ul>
+            <li>
+              <span class="tag-type fire">Fire</span>
+              <span class="tag-type psychic">Psychic</span>
+              <span class="tag-type flying">flying</span>
+              <span class="tag-type ice">ice</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="stats">
+          <h5>Stats</h5>
+          <div class="all">
+            <div class="item">
+              <span>HP</span>
+              <div class="bar-stats">
+                <div class="bar"></div>
+                <ul class="separator">
+                  <ul></ul>
+                  <ul></ul>
+                  <ul></ul>
+                  <ul></ul>
+                </ul>
+              </div>
+            </div>
+
+            <div class="item2">
+              <span>Attack</span>
+              <div class="bar-stats">
+                <div class="bar"></div>
+                <ul class="separator">
+                  <ul></ul>
+                  <ul></ul>
+                  <ul></ul>
+                  <ul></ul>
+                </ul>
+              </div>
+            </div>
+
+            <div class="item3">
+              <span>Deffense</span>
+              <div class="bar-stats">
+                <div class="bar"></div>
+                <ul class="separator">
+                  <ul></ul>
+                  <ul></ul>
+                  <ul></ul>
+                  <ul></ul>
+                </ul>
+              </div>
+            </div>
+
+            <div class="item4">
+              <span>Sp.attack</span>
+              <div class="bar-stats">
+                <div class="bar"></div>
+                <ul class="separator">
+                  <ul></ul>
+                  <ul></ul>
+                  <ul></ul>
+                  <ul></ul>
+                </ul>
+              </div>
+            </div>
+
+            <div class="item2">
+              <span>Sp.defense</span>
+              <div class="bar-stats">
+                <div class="bar"></div>
+                <ul class="separator">
+                  <ul></ul>
+                  <ul></ul>
+                  <ul></ul>
+                  <ul></ul>
+                </ul>
+              </div>
+            </div>
+
+            <div class="item2">
+              <span>Speed</span>
+              <div class="bar-stats">
+                <div class="bar"></div>
+                <ul class="separator">
+                  <ul></ul>
+                  <ul></ul>
+                  <ul></ul>
+                  <ul></ul>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+    </div>
+
+    </div>
+
+    </div>
 
     <script src="js/plugins.js"></script>
     <script src="js/all.js"></script>
 
-    <footer>
-      <div class="container">
-          <div class="text4">
-            <h3>Módulo JavaScript</h3>
-            <p>Consumindo e exibindo dados de uma API</p>
-          </div>
-          <a href="#">
-            <img src="./assets/codeboost.svg" alt="">
-          </a>
-      </div>
-    </footer>
 
   </body>
 </html>
