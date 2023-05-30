@@ -7,6 +7,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500&family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
+  <link rel="stylesheet" href="'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600&family=Poppins:wght@400;500&family=Roboto:wght@400;700&display=swap'">
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,200 +16,15 @@
   </head>
   <body>
 
-    <h1>Who is that pokémon?</h1>
-    <h2>Select your pokémon</h2>
-    <h3>bulbasaur</h3>
+    <header>
+      
+        <a href="" class="logo">
+          <img src="./assets/logo.svg" alt="">
+        </a>
+        <p>Developer → <strong> GeniltonSilva </strong></p>
+      
 
-    <div class="tag blue-tag">
-      <div class="icon"><img src="./assets/bag-red.svg" alt="Bag-red" /></div>
-      <span>Pokedex</span>
-    </div>
-
-    <div class="search">
-        <input type="text" placeholder="Search name or code">
-        <button class="button1" type="button">
-            <img src="./assets/icon-search.svg" alt="lupa">
-        </button>
-    </div>
-
-    <button class="type-filter fire">
-        <div class="icon2">
-            <img src="./assets/icon-types/grass.svg" alt="ghost">
-        </div>
-        <span>Ghost</span>
-       
-    </button>
-
-    <button class="js-open-details-podemon">
-      <div class="card-pokemon">
-        <div class="image grass">
-          <img src="./assets/bulbasaur.svg" alt="">
-      </div>
-
-      <div class="info">
-        <div class="text">
-          <span>#001</span>
-          <h3>Bulbasaur</h3>
-        </div>
-        <div class="icon3">
-          <img src="./assets/icon-types/grass.svg" alt="">
-        </div>
-      </div>
-    </button>
-
-    <span class="tag-type dragon">Bug</span>
-
-    <button class="btn-load-more">Load more Pokémons</button>
-
-    <!-- modal pokemon -->
-
-    <div class="modal" typePokemonModal="grass">
-      <div class="overlay"></div>
-      <div class="box"><button class="close">
-        <img src="./assets/close.svg" alt="fechar">
-      </button>
-
-      <div class="left-container">
-        <div class="icon6">
-          <img src="./assets/icon-types/grass.svg" alt="grass">
-        </div>
-        <div class="image6">
-          <img src="./assets/bulbasaur.svg" alt="bulbasaur">
-        </div>
-      </div>
-      <div class="right-container">
-
-        <div class="name6">
-          <h2>bulbasaur</h2>
-          <span class="modal6">#001</span>
-        </div>
-        <ul class="type2">
-          <li> <span class="tag-type fire">fire</span> </li>
-          <li> <span class="tag-type poison">poison</span> </li>
-        </ul>
-        <ul class="info6">
-          <li>
-            <span>Height</span>
-            <strong>0.7m</strong>
-          </li>
-
-          <li class="gap1">
-            <span>weight</span>
-            <strong>6.9m</strong>
-          </li>
-
-          
-          <li class="gap1">
-            <span>abilities</span>
-            <strong>Overgrow</strong>
-          </li class="gap1">
-
-        </ul>
-
-        <div class="weak">
-          <h4>Weaknesses</h4>
-          <ul>
-            <li>
-              <span class="tag-type fire">Fire</span>
-              <span class="tag-type psychic gap2">Psychic</span>
-              <span class="tag-type flying gap2">flying</span>
-              <span class="tag-type ice gap2">ice</span>
-            </li>
-          </ul>
-        </div>
-
-        <div class="stats">
-          <h5>Stats</h5>
-          <div class="all">
-            <div class="item2">
-              <span>HP</span>
-              <div class="bar-stats">
-                <div class="bar"></div>
-                <ul class="separator">
-                  <ul></ul>
-                  <ul></ul>
-                  <ul></ul>
-                  <ul></ul>
-                 
-                </ul>
-              </div>
-            </div>
-
-            <div class="item2">
-              <span>Attack</span>
-              <div class="bar-stats">
-                <div class="bar"></div>
-                <ul class="separator">
-                  <ul></ul>
-                  <ul></ul>
-                  <ul></ul>
-                  <ul></ul>
-                </ul>
-              </div>
-            </div>
-
-            <div class="item2">
-              <span>Deffense</span>
-              <div class="bar-stats">
-                <div class="bar"></div>
-                <ul class="separator">
-                  <ul></ul>
-                  <ul></ul>
-                  <ul></ul>
-                  <ul></ul>
-                </ul>
-              </div>
-            </div>
-
-            <div class="item2">
-              <span>Sp.attack</span>
-              <div class="bar-stats">
-                <div class="bar"></div>
-                <ul class="separator">
-                  <ul></ul>
-                  <ul></ul>
-                  <ul></ul>
-                  <ul></ul>
-                </ul>
-              </div>
-            </div>
-
-            <div class="item2">
-              <span>Sp.defense</span>
-              <div class="bar-stats">
-                <div class="bar"></div>
-                <ul class="separator">
-                  <ul></ul>
-                  <ul></ul>
-                  <ul></ul>
-                  <ul></ul>
-                </ul>
-              </div>
-            </div>
-
-            <div class="item2">
-              <span>Speed</span>
-              <div class="bar-stats">
-                <div class="bar"></div>
-                <ul class="separator">
-                  <ul></ul>
-                  <ul></ul>
-                  <ul></ul>
-                  <ul></ul>
-                </ul>
-              </div>
-            </div>
-
-          </div>
-        </div>
-    </div>
-
-    </div>
-
-    </div>
-
-    <script src="js/plugins.js"></script>
-    <script src="js/all.js"></script>
+    </header>
 
 
   </body>
