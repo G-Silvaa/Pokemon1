@@ -1,0 +1,23 @@
+.container{
+    width: 100%;
+    height: 60vh;
+    background-color: rgb(230, 0, 0);
+    position: relative;
+    display: flex;
+    justify-content: center;
+  
+    
+}
+.container2{
+    width: 100%;
+    height: 30vh;
+    background-color: white;
+}
+
+.container3{
+    width: 18%;
+    height: 70vh;
+    background-color: white;
+    border: solid red;
+    margin-left: 80px;
+}

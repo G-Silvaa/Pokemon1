@@ -5,10 +5,12 @@
     list-style-type: none;
     font-family: 'Inter', sans-serif;
    
+   
 }
 
 html {
     font-size:62.5%;
+    
 }
 
 button {
@@ -31,6 +33,3 @@ ul{
     list-style: none;
 }
 
-body{
-    background-color: rgb(1, 0, 0);
-}

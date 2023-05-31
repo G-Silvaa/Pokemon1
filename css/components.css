@@ -1,12 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600&family=Poppins:wght@400;500&family=Roboto:wght@400;700&display=swap');
 
-.container {
-  border: 1px solid black;
-  width: 100vw;
-  height: 100vh;
-}
+
 
 .tag {
+  position: absolute;
   display: flex;
   align-items: center;
   background-color: #ffffff;
@@ -14,6 +11,8 @@
   width: 12.1rem;
   padding: 0.375rem 0.25rem;
   gap: 1.8125rem;
+  z-index: 3;
+  
 }
 
 .icon {
@@ -32,14 +31,40 @@ nav {
   margin: 1.25rem;
 }
 
+.texto{
+  margin-top: 3.0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .icon2 {
   width: 7.5rem;
 }
 
-.container {
-  display: flex;
-  justify-content: center;
+.container .pokeball{
+display: flex;
+position: absolute;
+top: 0;
+margin-top: 22rem;
+z-index: 2;
 }
+
+.container .stars{
+position: absolute;
+width: 18rem;
+height: 40rem;
+z-index: 2;
+}
+
+.container .bg{
+  position: absolute;
+  z-index: 1;
+  width: 100vw;
+  bottom: 0;
+}
+
+/* container 2 */
 
 .search {
   background-color: #ffffff;
@@ -53,6 +78,26 @@ nav {
   padding-left: 2.5rem;
   padding-right: 2rem;
 }
+
+.container2 {
+  position: relative;
+display: flex;
+align-items: center;
+justify-content: space-between;
+background: linear-gradient(284.15deg, #EFF3F6 15.54%, rgba(239, 243, 246, 0) 86.34%);
+}
+
+.container2 h2{
+  margin-left: 6rem;
+}
+
+.container2 .search{
+  position: absolute;
+  right: 0;
+  margin-right: 6rem;
+
+}
+
 
 .search input {
   border: none;
@@ -103,6 +148,7 @@ nav {
   align-items: center;
   justify-content: center;
   margin-right: 0.5rem;
+  
 }
 
 .type-filter span {
@@ -456,6 +502,7 @@ pointer-events: all;
 .open-modal .box{
   transform: translateY(0);
 }
+
 
 
 
