@@ -169,7 +169,7 @@
   background-color: rgba(179, 0, 255, 0.211);
 }
 
-.fighting:hover {
+.fighting{
   color: rgb(118, 10, 10);
   background-color: rgba(118, 10, 10, 0.251);
 }

@@ -128,12 +128,15 @@ background: linear-gradient(284.15deg, #EFF3F6 15.54%, rgba(239, 243, 246, 0) 86
   border-color: #3e75c3;
 }
 
+
+
 .type-filter {
   display: flex;
   align-items: center;
   filter: grayscale(100%);
   opacity: 0.6;
   transition: all 0.5s;
+  
 }
 
 .type-filter:hover {
@@ -153,7 +156,7 @@ background: linear-gradient(284.15deg, #EFF3F6 15.54%, rgba(239, 243, 246, 0) 86
 
 .type-filter span {
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   line-height: 150%;
 }
 
@@ -503,6 +506,12 @@ pointer-events: all;
   transform: translateY(0);
 }
 
+.bordere{
+  background-color: transparent;
+}
+.color{
+  color: gray;
+}
 
 
 
