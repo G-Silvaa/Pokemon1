@@ -160,23 +160,28 @@ background: linear-gradient(284.15deg, #EFF3F6 15.54%, rgba(239, 243, 246, 0) 86
   line-height: 150%;
 }
 
+.tamanho {
+  width: 290px;
+  
+}
 
 .card-pokemon{
     width: 160%;
     max-width: 28rem;
     height: 28.4rem;
     background-color: #ffffff;
-    box-shadow: 0px 10px 51px -5px rgba(183, 189, 193, 0.3);
+    box-shadow: 0px 10px 51px - ikki5px rgba(183, 189, 193, 0.3);
     border-radius: 12px;
-    position: relative;
     z-index: 1;
     transition: all .3s;
-   
+    margin-top: 20px;
+    
 }
+
+
 
 .card-pokemon:hover{
     transform:  scale(1.02);
-    box-shadow: rgba(0, 0, 0, 0.3);
 }
 
 .image{
@@ -236,9 +241,10 @@ font-family: 'Montserrat',sans-serif;
 }
 
 .btn-load-more{
+
     background-color: rgba(63,93,179,0.1);
     border-radius: 6px;
-    padding: 1.4rem 2rem;
+    padding: 0.5rem 2rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 1.4rem;
@@ -252,6 +258,20 @@ font-family: 'Montserrat',sans-serif;
     color: #ffffff;
 }
 
+.number-div{
+  display: flex;
+  gap: 1.0rem;
+}
+
+.number-pokemon{
+  font-size: 1.8rem;
+  
+}
+
+/* .number-img{
+  display: inline-flex;
+ 
+} */
 /* modal pokemon */
 
 .modal {
