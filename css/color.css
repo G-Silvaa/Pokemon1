@@ -119,7 +119,7 @@
 
 .grass::after {
   background-color: #00ff3c;
-  transition: 1s ease-out;
+  
 }
 
 .steel::after {

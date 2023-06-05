@@ -169,12 +169,15 @@ background: linear-gradient(284.15deg, #EFF3F6 15.54%, rgba(239, 243, 246, 0) 86
     width: 160%;
     max-width: 28rem;
     height: 28.4rem;
-    background-color: #ffffff;
-    box-shadow: 0px 10px 51px - ikki5px rgba(183, 189, 193, 0.3);
+    margin: 40px 20px 20px 0px;
+    background-color: #fffefe;
+    -webkit-box-shadow: 1px 3px 7px 8px rgba(0, 0, 0, 0.27);
+    -moz-box-shadow: 1px 3px 7px 8px rgba(0, 0, 0, 0.23);
+    box-shadow: 1px 3px 7px 8px rgba(0, 0, 0, 0.163);
     border-radius: 12px;
     z-index: 1;
     transition: all .3s;
-    margin-top: 20px;
+    
     
 }
 
@@ -187,10 +190,15 @@ background: linear-gradient(284.15deg, #EFF3F6 15.54%, rgba(239, 243, 246, 0) 86
 .image{
     position: relative;
     height: 200px;
-    height: 200px;
+    
     display: flex;
     justify-content: center;
     align-items: center;
+    
+}
+
+.api-tamanho{
+  height: 76%;
     
 }
 
@@ -241,7 +249,7 @@ font-family: 'Montserrat',sans-serif;
 }
 
 .btn-load-more{
-
+    height: 50px;
     background-color: rgba(63,93,179,0.1);
     border-radius: 6px;
     padding: 0.5rem 2rem;
@@ -251,6 +259,7 @@ font-family: 'Montserrat',sans-serif;
     letter-spacing: -0.01em;
     color: #3f5db3;
     transition: all .3s;
+    
 }
 
 .btn-load-more:hover {
@@ -260,6 +269,9 @@ font-family: 'Montserrat',sans-serif;
 
 .number-div{
   display: flex;
+  position: absolute;
+  left: 0;
+  margin-left: 4rem;
   gap: 1.0rem;
 }
 

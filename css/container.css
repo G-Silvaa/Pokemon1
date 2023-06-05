@@ -35,10 +35,13 @@
 }
 
 .container-pokemons{
-  
-    width: 60%;
+    position: relative;
+    display: flex;
+    width: 65%;
     padding: 30px;
     flex-wrap: wrap;
     margin-left: 80px;
+    justify-content: center;
+   
    
 }
