@@ -233,6 +233,7 @@
 
 /* background da tabela dos pokemons */
 
+
 [typePokemonModal="bug"] .left-container{
   background: url("../assets/bg-types/bug.svg");
 }

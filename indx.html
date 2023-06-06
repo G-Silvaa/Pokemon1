@@ -46,8 +46,8 @@
     <h2>Select your <div></div> pokémon</h2>
 
     <div class="search">
-      <input type="text" placeholder="Search name or code">
-      <button class="button1" type="button">
+      <input type="text" placeholder="Search name or code" id="js-input-search">
+      <button class="button1" type="button" id="js-btn-search">
           <img src="./assets/icon-search.svg" alt="lupa">
       </button>
   </div>
@@ -58,7 +58,7 @@
 
     <ul id="js-type-area">
 
-    <button class="type-filter rock bordere color">
+    <button class="type-filter rock bordere color" code-type="">
       <div class="icon2">
           <img src="./assets/icon-all.svg" alt="ghost">
       </div>
@@ -71,6 +71,7 @@
 </ul>
 
   <div class="container-pokemons">
+    
     <div class="number-div">
     <img class="number-img" src="./assets/icon-pokeball.svg" alt="">
     <span class="number-pokemon"><strong id="js-number-pokemons"> - </strong> Pokémons</span>
@@ -93,7 +94,7 @@
 
     
 
-    <div class="modal" typePokemonModal="grass">
+    <div class="modal" typePokemonModal="grass" id="js-modal-details">
       <div class="overlay"></div>
       <div class="box"><button class="close">
         <img src="./assets/close.svg" alt="fechar">
@@ -101,17 +102,17 @@
 
       <div class="left-container">
         <div class="icon6">
-          <img src="./assets/icon-types/grass.svg" alt="grass">
+          <img src="./assets/icon-types/grass.svg" id="js-image-type-modal" alt="grass">
         </div>
         <div class="image6">
-          <img src="./assets/bulbasaur.svg" alt="bulbasaur">
+          <img src="" id="js-image-pokemon-modal" alt="bulbasaur">
         </div>
       </div>
       <div class="right-container">
 
         <div class="name6">
-          <h2>bulbasaur</h2>
-          <span class="modal6">#001</span>
+          <h2 id="js-name-pokemon-modal"></h2>
+          <span class="modal6" id="s-code-pokemon-modal"></span>
         </div>
         <ul class="type2">
           <li> <span class="tag-type grass">grass</span> </li>
