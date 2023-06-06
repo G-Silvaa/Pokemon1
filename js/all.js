@@ -25,7 +25,7 @@ closePokemon.addEventListener('click', closeDetailsPokemon)
 const areaPokemon = document.getElementById('js-list-pokemon')
 
 function primeiraLetraMa(string){
- return string.charArt(0).toUpperCase() + string.slice(1);
+ return string[0].toUpperCase() + string.slice(1);
 }
 
 function createPoke(code, type, nome, imagePo){
@@ -55,7 +55,7 @@ function createPoke(code, type, nome, imagePo){
     textcard.appendChild(spancard);
 
     let  namecard = document.createElement('h3')
-    namecard.textContent = nome;
+    namecard.textContent = primeiraLetraMa(nome);
     textcard.appendChild(namecard)
 
     let areaicon = document.createElement('div')
@@ -130,6 +130,43 @@ CardPokemon.forEach(card => {
     card.addEventListener('click', openDetailsPokemon)})
 
 closePokemon.addEventListener('click', closeDetailsPokemon)
+
+//parte para listar os tipos
+
+const areaTypes = document.getElementById('js-type-area')
+
+
+axios({
+    method: 'GET',
+    url:'https://pokeapi.co/api/v2/type'
+})
+
+.then(response => {
+    const { results } = response.data;
+    
+    results.forEach((type, index) => {
+        if(index < 18){
+      let itemtype = document.createElement('li')
+      areaTypes.appendChild(itemtype)
+
+      let buttonFilter = document.createElement('button')
+      buttonFilter.classList = `type-filter ${type.name} bordere color`;
+      itemtype.appendChild(buttonFilter)
+
+      let imageIC = document.createElement('div');
+      imageIC.classList = 'icon2';
+      buttonFilter.appendChild(imageIC);
+
+      let imgtypee = document.createElement('img');
+      imgtypee.setAttribute('src',`./assets/icon-types/${type.name}.svg`)
+      imageIC.appendChild(imgtypee)
+
+      let srcType = document.createElement('span');
+      srcType.textContent = primeiraLetraMa(type.name);
+      buttonFilter.appendChild(srcType)
+      }
+    })
+})
 
 
 

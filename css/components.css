@@ -277,6 +277,10 @@ font-family: 'Montserrat',sans-serif;
 
 .number-pokemon{
   font-size: 1.8rem;
+}
+
+#js-type-area button{
+  margin-bottom: 10px;
   
 }
 
@@ -542,6 +546,7 @@ position: fixed;
 .bordere{
   background-color: transparent;
 }
+
 .color{
   color: gray;
 }
