@@ -124,7 +124,7 @@ function listingPokemons(urlApi) {
     })
 }
 
-listingPokemons('https://pokeapi.co/api/v2/pokemon?limit=9&offset=0');
+listingPokemons(`https://pokeapi.co/api/v2/pokemon?limit=9&offset=0`);
 
 CardPokemon.forEach(card => {
     card.addEventListener('click', openDetailsPokemon)})
@@ -151,6 +151,7 @@ axios({
 
       let buttonFilter = document.createElement('button')
       buttonFilter.classList = `type-filter ${type.name} bordere color`;
+      buttonFilter.setAttribute('code-type',index)
       itemtype.appendChild(buttonFilter)
 
       let imageIC = document.createElement('div');
@@ -164,9 +165,36 @@ axios({
       let srcType = document.createElement('span');
       srcType.textContent = primeiraLetraMa(type.name);
       buttonFilter.appendChild(srcType)
+
+      const alltypes = document.querySelectorAll('.type-filter');
+
+      alltypes.forEach(btn => {
+        btn.addEventListener('click',filterByTypes)
+      })
       }
     })
 })
+// script que faz funcionar o load more
+
+const btnLoadMore = document.getElementById('js-btn-load-more')
+
+let CountPokemons = 10;
+
+function showMorePokemon() {
+   listingPokemons(`https://pokeapi.co/api/v2/pokemon?limit=9&offset=${CountPokemons}`)
+
+   CountPokemons = CountPokemons + 9;
+}
+
+btnLoadMore.addEventListener('click', showMorePokemon)
+
+// funcao para filtrar os pokemons 
+
+function filterByTypes() {
+    console.log(this.getAttribute('code-type'));
+    
+}
+
 
 
 
