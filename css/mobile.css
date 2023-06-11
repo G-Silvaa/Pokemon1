@@ -1,0 +1,35 @@
+
+@media screen and (max-width: 740px) {
+    .mobile-hidden{
+        display: none;
+      }
+      
+}
+
+@media screen and (max-width: 500px) {
+   .container-filter{
+    display: none;
+  
+   }
+   .container-pokemons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+
+   .container2{
+    display: flex;
+    flex-direction: column;
+    
+   }
+
+   .container2 .search{
+    margin-top: 14rem;
+    width: 60%;
+   }
+
+   .number-div{
+    top: 0;
+   }
+}
+
