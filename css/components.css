@@ -380,6 +380,7 @@ font-family: 'Montserrat',sans-serif;
 
 .right-container{
   padding: 35px 72px 2.9rem 7.4rem;
+  width: 100%;
 }
 
 .name6{
@@ -452,7 +453,7 @@ font-family: 'Montserrat',sans-serif;
 
 .weak{
   flex-wrap: wrap;
-  margin-bottom: 36px;
+  margin-bottom: 2.0rem;
 }
 
 .weak h4{
@@ -465,8 +466,10 @@ color: #4D5053;
 margin-bottom: 16px;
 }
 
-.weak .gap2{
-  margin-left: 10px;
+.weak li{
+ display: flex;
+ flex-wrap: wrap;
+ gap: 6px;
 }
 
 .stats h5{
@@ -483,6 +486,8 @@ color: #4D5053;
   margin-bottom: 1.3rem;
   display: flex;
   justify-content: space-between;
+  
+  
 }
 
 .item2 span{
@@ -494,13 +499,16 @@ color: #7A7D80;
 display: block;
 width: 6.8rem;
 
+
+
 }
 
 .bar-stats {
-  position: relative;
+position: relative;
 width: 100%;
 max-width: 28.3rem;
 height: 3px;
+margin-left: 20px;
 background-color: #EFF3F6;
 }
 
